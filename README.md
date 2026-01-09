@@ -49,5 +49,5 @@ This project focuses on building a scalable and responsive web application using
 
 ---
 
-## 📂 Project Structure
+
 
