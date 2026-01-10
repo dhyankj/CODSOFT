@@ -1,3 +1,5 @@
+import JobCard from "../components/JobCard";
+
 const jobsData = [
   {
     id: 1,
@@ -25,11 +27,7 @@ function Jobs() {
       <h2>Available Jobs</h2>
 
       {jobsData.map((job) => (
-        <div key={job.id}>
-          <h3>{job.title}</h3>
-          <p>{job.company}</p>
-          <p>{job.location}</p>
-        </div>
+        <JobCard key={job.id} job={job} />
       ))}
     </div>
   );
