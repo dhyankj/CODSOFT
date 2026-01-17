@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 function JobCard({ job }) {
   return (
-    <div className="job-card">
+    <div style={{ border: "1px solid #ddd", padding: "15px", marginBottom: "15px" }}>
       <h3>{job.title}</h3>
-      <p>{job.company} — {job.location}</p>
+      <p>{job.company} • {job.location}</p>
       <Link to={`/job/${job.id}`}>View Details</Link>
     </div>
   );

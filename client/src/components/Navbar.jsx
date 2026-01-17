@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom";
-import "./Navbar.css";
-
 
 function Navbar() {
   return (
-    <nav>
-      <h3>Job Board</h3>
+    <nav style={{
+      display: "flex",
+      justifyContent: "space-between",
+      padding: "15px 40px",
+      borderBottom: "1px solid #ddd"
+    }}>
+      <h2>JobBoard</h2>
 
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-
-        <li>
-          <Link to="/jobs">Jobs</Link>
-        </li>
-      </ul>
+      <div style={{ display: "flex", gap: "20px" }}>
+        <Link to="/">Home</Link>
+        <Link to="/jobs">Jobs</Link>
+        <Link to="/login">Login</Link>
+        <Link to="/register">Register</Link>
+      </div>
     </nav>
   );
 }
